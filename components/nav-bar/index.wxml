@@ -1,0 +1,16 @@
+<!--components/nav-bar/index.wxml-->
+<view class="nav-bar">
+  <view class="left">
+    <slot name="left"></slot>
+    <view class="default">
+      左边
+    </view>
+  </view>
+  <view class="center">
+    <slot name="center"></slot>
+    <view class="default">
+      默认中间内容
+    </view>
+  </view>
+  <view class="right"></view>
+</view>

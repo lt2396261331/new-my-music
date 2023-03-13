@@ -1,0 +1,5 @@
+/* pages/menu-song/index.wxss */
+
+.menu-song .list {
+  padding: 0 20rpx;
+}

@@ -1,0 +1,40 @@
+/* components/nav-bar/index.wxss */
+.nav-bar {
+  height: 44px;
+  display: flex;
+}
+
+.left,.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 50px
+}
+
+.center {
+  flex: 1;
+}
+
+.right {
+  width: 50px
+}
+
+.left .default {
+  display: none;
+}
+
+.left:empty + .default {
+  display: flex;
+}
+
+
+.center .default {
+  display: none;
+}
+
+.center:empty + .default {
+  display: flex;
+}

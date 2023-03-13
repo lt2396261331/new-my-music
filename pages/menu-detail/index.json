@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "menu-item": "/components/menu-item/index",
+    "section-header": "/components/section-header/index"
+  },
+  "navigationBarTitleText": "歌单分类"
+}

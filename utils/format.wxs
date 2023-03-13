@@ -1,0 +1,27 @@
+function formatCount(count) {
+  if (count / 100000000 > 1) {
+    return (count / 100000000).toFixed(1) + '亿'
+  } else if (count / 10000 > 1) {
+    return (count / 10000).toFixed(1) + '万'
+  } else {
+    return count
+  }
+}
+
+function padLeftZero(str) {
+  str = str.toString()
+  return ("00" + str).slice(str.length);
+}
+
+function formatTime(duration) {
+  duration = duration / 1000
+  var minute = Math.floor(duration / 60)
+  var second = duration % 60
+  return padLeftZero(minute) + ":" + padLeftZero(second)
+}
+
+
+module.exports = {
+  formatCount: formatCount,
+  formatTime: formatTime
+}

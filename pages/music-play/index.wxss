@@ -1,0 +1,55 @@
+/* pages/music-play/index.wxss */
+.music-play {
+  color: #fff;
+}
+
+/* 页面背景 */
+.bg-image {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.bg-cover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, .2);
+  backdrop-filter: blur(20px);
+}
+
+
+/* 状态栏和tabbar */
+.top-bar {
+  font-size: 32rpx;
+}
+
+.center {
+  color: #aaa;
+}
+
+.partition {
+  padding: 0 8rpx;
+}
+
+/* 内容 */
+.content {
+  box-sizing: border-box;
+  padding: 40rpx 60rpx;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+

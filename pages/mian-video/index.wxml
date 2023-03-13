@@ -1,0 +1,6 @@
+<!--pages/mian-video/index.wxml-->
+<view class="video">
+  <block wx:for="{{mvList}}" wx:key="id">
+    <video-item class="item" itemData="{{item}}"></video-item>
+  </block>
+</view>

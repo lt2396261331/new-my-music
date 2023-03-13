@@ -1,0 +1,22 @@
+<!--components/ranking-item/index.wxml-->
+<wxs src="../../utils/format.wxs" module="fm"></wxs>
+
+<view class="ranking" wx:if="{{itemData.name}}" bind:tap="handleTapRanking">
+  <view class="left">
+    <view class="title">{{itemData.name}}</view>
+    <block wx:for="{{3}}" wx:key="*this">
+      <view class="songs">
+        <text>{{ item + 1 }} . </text>
+        <text>{{itemData.tracks[item].name}} - </text>
+        <block wx:for="{{itemData.tracks[item].ar}}" wx:for-key="indey" wx:for-item="iten" wx:key="id">
+          <text>{{iten.name}}</text>
+          <text wx:if="{{index + 1 !== itemData.tracks[item].ar.length}}"> / </text>
+        </block>
+      </view>
+    </block>
+  </view>
+  <view class="right">
+    <image class="image" src="{{itemData.coverImgUrl}}" />
+    <view class="count">{{ fm.formatCount(itemData.playCount) }}</view>
+  </view>
+</view>

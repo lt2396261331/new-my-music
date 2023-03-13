@@ -1,0 +1,37 @@
+{
+  "id": "3934318",
+  "name": "网易云音乐",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4933565",
+      "name": "share",
+      "font_class": "share",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "4936669",
+      "name": "like-fill",
+      "font_class": "like-fill",
+      "unicode": "e869",
+      "unicode_decimal": 59497
+    },
+    {
+      "icon_id": "6807373",
+      "name": "Add-Folder",
+      "font_class": "Add-Folder",
+      "unicode": "ec2e",
+      "unicode_decimal": 60462
+    },
+    {
+      "icon_id": "12030563",
+      "name": "comment",
+      "font_class": "comment",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}

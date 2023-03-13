@@ -1,0 +1,14 @@
+<!--components/song-item-v2/index.wxml-->
+<view class="item">
+  <view class="left">{{index}} </view>
+  <view class="right">
+    <view class="name">{{itemData.name}}</view>
+    <view class="auther">
+      <image class="icon" src="../../asstes/images/icons/sq_icon.png"></image>
+      <block wx:for="{{itemData.ar}}" wx:for-key="indey" wx:for-item="iten" wx:key="id">
+        <text>{{iten.name}}</text>
+        <text class="split" wx:if="{{index + 1 !== itemData.ar.length}}"> / </text>
+      </block>
+    </view>
+  </view>
+</view>

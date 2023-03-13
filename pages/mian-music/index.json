@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-search": "@vant/weapp/search/index",
+    "section-header": "/components/section-header/index",
+    "song-item-v1": "/components/song-item-v1/index",
+    "menu-area": "/components/menu-area/index",
+    "ranking-item": "/components/ranking-item/index"
+  },
+  "navigationBarTitleText": "音乐",
+  "navigationBarBackgroundColor": "#fafafa"
+}

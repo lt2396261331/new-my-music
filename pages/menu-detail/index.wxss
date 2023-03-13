@@ -1,0 +1,19 @@
+/* pages/menu-detail/index.wxss */
+
+.menu-detail {
+  padding: 0 20rpx;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  margin-top: -12rpx;
+}
+
+.iten {
+  width: 48%;
+  margin: 12rpx 0;
+  
+}

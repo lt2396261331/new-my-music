@@ -1,0 +1,50 @@
+<!--pages/video-detail/index.wxml-->
+<wxs src="../../utils/format.wxs" module="fm"></wxs>
+
+<video 
+  src="{{url}}" 
+  class="video" 
+  autoplay 
+  referrer-policy="origin"
+/>
+
+<scroll-view class="content">
+  <view class="auther">
+    <image class="image" src="{{detailInfo.artists[0].img1v1Url}}" mode="aspectFill"></image>
+    <view class="name">
+      <view>{{detailInfo.artistName}}</view>
+      <view class="fans">194.8万粉丝 28视频</view>
+    </view>
+  </view>
+  <view class="info">
+    <text class="name">{{detailInfo.name}}-{{detailInfo.artistName}}</text>
+    <text>{{fm.formatCount(detailInfo.playCount)}}次观看 · {{detailInfo.publishTime}}</text>
+  </view>
+  <view class="share">
+    <view class="item">
+      <text class="icon iconfont icon-Add-Folder"></text>
+      <text>收藏</text>
+    </view>
+    <view class="item">
+      <text class="icon iconfont icon-share"></text>
+      <text>{{mvDetailCount.shareCount}}</text>
+    </view>
+    <view class="item">
+      <text class="icon iconfont icon-comment"></text>
+      <text>{{mvDetailCount.commentCount}}</text>
+    </view>
+    <view class="item">
+      <text class="icon iconfont icon-like-fill"></text>
+      <text>{{mvDetailCount.likedCount}}</text>
+    </view>
+  </view>
+  <view class="categroyList">
+    <view class="title">推荐视频</view>
+    <view class="mv-list">
+      <block wx:for="{{relatedList}}" wx:key="vid">
+        <video-item2 videoInfo="{{item}}"/>
+      </block>
+    </view>
+  </view>
+</scroll-view>
+

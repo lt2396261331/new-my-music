@@ -1,0 +1,140 @@
+/* components/menu-header/index.wxss */
+@import "/asstes/icon-font/iconfont.wxss";
+
+.header {
+  /* padding: 24rpx 16rpx; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 450rpx;
+  color: #fff;
+}
+
+.bg-image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-cover {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  backdrop-filter: blur(5px);
+}
+
+.content {
+  display: flex;
+  /* margin-top: 60rpx; */
+  padding: 35rpx 20rpx 0 20rpx;
+}
+
+.content .image {
+  position: relative;
+}
+
+.content .image .cover {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 16rpx;
+}
+
+.content .image .count {
+  position: absolute;
+  font-size: 20rpx;
+  right: 10rpx;
+  top: 10rpx;
+}
+
+.content .info {
+  flex: 1;
+  margin-left: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content .info .name {
+  font-size: 28rpx;
+}
+
+.content .info .creator {
+  display: flex;
+  align-items: center;
+}
+
+.content .info .creator .nickname {
+  font-size: 24rpx;
+  margin-left: 18rpx;
+}
+
+.content .info .tags {
+  font-size: 22rpx;
+}
+
+.content .info .tags .tag {
+  padding: 6rpx 16rpx;
+  margin: 14rpx 10rpx;
+  background-color: rgba(255,240,245,.2);
+  position: relative;
+}
+
+.content .info .tags .tag .tagname {
+  padding: 0 6rpx;
+}
+
+
+.desc {
+
+  margin: 30rpx 0;
+  display: flex;
+  font-size: 24rpx;
+  padding: 0 20rpx;
+
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+
+.avatar {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+}
+
+.action {
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16rpx;
+}
+
+.action .btn {
+  width: 25%;
+  height: 60rpx;
+  background-color: rgba(255,240,245,.2);
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action .icon {
+  background-color: rgb(168, 46, 15) !important;
+}
+
+.action .btn .count {
+  font-size: 22rpx;
+  padding: 0 10rpx;
+}

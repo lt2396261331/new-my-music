@@ -1,0 +1,25 @@
+/* pages/mian-music/index.wxss */
+page {
+  --search-background-color: #fff;
+  --search-padding: 10px 0;
+
+  box-sizing: border-box;
+  padding: 0 24rpx;
+  background-color: #fafafa;
+}
+
+.swiper {
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.item .banner-image {
+  width: 100%;
+}
+
+.ranking {
+  padding-bottom: 10rpx;
+}
+
+
+

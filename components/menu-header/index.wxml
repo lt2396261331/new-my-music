@@ -1,0 +1,47 @@
+<!--components/menu-header/index.wxml-->
+<wxs src="/utils/format.wxs" module="fm"></wxs> 
+
+<view class="header">
+  <!-- 背景 -->
+  <image class="bg-image" mode="aspectFill" src="{{songInfo.coverImgUrl}}"></image>
+  <view class="bg-cover"></view>
+
+  <!-- 内容 -->
+  <view class="content">
+    <view class="image">
+      <image mode="aspectFill" src="{{songInfo.coverImgUrl}}" class="cover" />
+      <text class="count">{{fm.formatCount(songInfo.playCount)}}</text>
+    </view>
+    <view class="info">
+      <view class="name">{{songInfo.name}}</view>
+      <view class="creator">
+        <image mode="aspectFill" src="{{songInfo.creator.avatarUrl}}" class="avatar" />
+        <text class="nickname">{{songInfo.creator.nickname}}</text>
+      </view>
+      <view class="tags">
+        <block wx:for="{{songInfo.tags}}" wx:key="*this">
+          <text class="tag">
+            <text class="tagname">{{item}}</text>
+            <text>></text>
+          </text>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class="desc">简介：{{songInfo.description}}</view>
+  <view class="action">
+    <view class="btn">
+      <text class="iconfont icon-share"></text>
+      <text class="count">{{songInfo.shareCount}}</text>
+    </view>
+    <view class="btn">
+      <text class="iconfont icon-comment"></text>
+      <text class="count">{{songInfo.commentCount}}</text>
+    </view>
+    <view class="btn icon">
+      <text class="iconfont icon-Add-Folder"></text>
+      <text class="count">{{songInfo.subscribedCount}}</text>
+    </view>
+  </view>
+</view>
+

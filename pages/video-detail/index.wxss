@@ -1,0 +1,90 @@
+/* pages/video-detail/index.wxss */
+page {
+  height: 100vh;
+}
+
+.video {
+  width: 100%;
+  height: 450rpx;
+}
+
+.content {
+  padding: 12rpx 24rpx;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.auther {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 17rpx 0;
+}
+
+.auther .name {
+  font-size: 26rpx;
+  font-weight: 700;
+  margin-left: 20rpx;
+}
+
+.auther .name .fans {
+  font-size: 24rpx;
+  color: #b8b3b3;
+  font-weight: normal;
+}
+
+.content .image{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.content .info {
+  display: flex;
+  flex-direction: column;
+  padding: 18rpx 0;
+  font-size: 24rpx;
+  color: #7e7e7e;
+}
+
+.content .info .name {
+  padding: 5rpx 0;
+}
+
+.share {
+  display: flex;
+  padding: 30rpx 0 10rpx 0;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 20rpx;
+  color: #666666;
+}
+
+.share .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.share .item .icon {
+  font-size: 50rpx;
+  padding-bottom: 10rpx;
+}
+
+.categroyList {
+  border-top: 1px solid #eee;
+  padding-top: 20rpx;
+  margin-top: 20rpx;
+}
+
+.categroyList .title {
+  font-size: 28rpx;
+  color: #0f0202;
+  font-weight: 700;
+}
+
+.categroyList .mv-list {
+  display: flex;
+  flex-direction: column;
+}

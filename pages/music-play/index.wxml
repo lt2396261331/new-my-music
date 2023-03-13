@@ -1,0 +1,33 @@
+<!--pages/music-play/index.wxml-->
+<view class="music-play">
+  <image class="bg-image" src="{{songInfo.al.picUrl}}" mode="aspectFill"/>
+  <view class="bg-cover"></view>
+
+  <view class="top-bar">
+    <view class="custom" style="height: {{statusBarHeight}}px"></view>
+    <nav-bar>
+      <view slot="left">呵呵呵</view>
+      <view slot="center" class="center">
+        <block wx:for="{{tabbarTag}}" wx:key="*this">
+          <text>{{item}}</text>
+          <text class="partition" wx:if="{{index + 1 !== tabbarTag.length}}">|</text>
+        </block>
+      </view>
+    </nav-bar>
+  </view>
+
+  <view class="content" style="height: {{contentHeight}}px">
+    <swiper class="swiper" >
+      <swiper-item>
+        <view class="music">
+          歌曲
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="歌词">
+          歌曲
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

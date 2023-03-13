@@ -1,0 +1,14 @@
+<!--components/video-item2/index.wxml-->
+<wxs src="../../utils/format.wxs" module="fm"></wxs>
+
+<view class="item">
+  <view class="album">
+    <image mode="widthFix" class="image" src="{{videoInfo.coverUrl}}" />
+    <view class="count">{{fm.formatTime(videoInfo.durationms)}}</view>
+  </view>
+  <view class="info">
+    <view class="title">{{videoInfo.title}}</view>
+    <view class="user">{{videoInfo.creator[0].userName}}</view>
+    <view class="playCount">{{fm.formatCount(videoInfo.playTime)}}播放</view>
+  </view>
+</view>
